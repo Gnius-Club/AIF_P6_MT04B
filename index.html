@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P6-TM04B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 4B 6to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje</strong>
+                                    <ul>
+                                        <li>Que los estudiantes implementen su "Plan de Manipulación" en el robot XGO. Que ejecuten y depuren la secuencia de movimientos del brazo y la pinza, enfocándose en el desafío de la precisión. El objetivo principal es que logren, mediante un proceso de calibración (prueba y error), encontrar las coordenadas (X, Y, Z) correctas para que el robot alcance y agarre exitosamente un objeto físico.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase</strong>
+                                    <ul>
+                                        <li>⚡Bienvenida y Conexión</li>
+                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
+                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO</li>
+                                        <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
+                                    </ul>
+                                    <strong>Entregable Clave</strong>
+                                    <ul>
+                                        <li>Robot XGO ejecutando una secuencia de agarre calibrada y exitosa, demostrada por cada equipo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso al entorno de programación Python en las computadoras.</li>
+                                        <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
+                                        <li>Los "Planes de Manipulación" creados por cada equipo en la Sesión 4A.</li>
+                                        <li>Objetos pequeños para agarrar (cubos de LEGO, pompones, etc.).</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna)</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y que el entorno Python funcione.</li>
+                                                <li>Asegurar que los robots XGO V2 estén completamente cargados.</li>
+                                                <li>Tener la presentación de diapositivas lista.</li>
+                                                <li>Probar el chat Agente Gnius (Xolo) para consultas.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad práctica.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Bienvenida y Conexión ⏰ 2 minutos</h2>
+                <p><strong>Propósito:</strong> Recordar el trabajo previo, establecer el objetivo del día y preparar el entorno de trabajo para la sesión práctica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Conexión con Sesión A ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la Sesión A y crea expectación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, operadores! ¡Bienvenidos a la Sesión B! En la sesión pasada diseñaron unos 'Planes de Manipulación' muy detallados. Hoy es el día de la verdad: vamos a dar vida a esos brazos robóticos y a enfrentarnos al desafío de la precisión. ¿Están listos para el agarre?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Guía de Conexión y Preparación ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 3) Guía a los equipos para que se preparen técnicamente para la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Equipos, es hora de dar vida a esos brazos robóticos. Conecten sus XGO, coloquen su objeto objetivo en la posición designada y abran su 'Plan de Manipulación'.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
+                <p><strong>Propósito</strong> Poner en práctica el plan creado en la Sesión A, ejecutando el código del brazo en el robot físico y observando los resultados iniciales.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Prueba 1: "Exploración del Espacio de Trabajo" ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que realicen una prueba rápida y exploratoria para entender los límites del brazo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que están listos, vamos con su primera prueba. Ejecuten rápidamente su plan para "Explorar el Espacio de Trabajo". Prueben diferentes coordenadas para `arm_move_group` y observen los límites del brazo. Esto les dará una idea intuitiva del área que puede alcanzar, algo que discutimos en la Sesión A.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Prueba 2: "Primer Intento de Agarre" ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Guía a los equipos para que ejecuten su secuencia de agarre completa, anticipando que probablemente no funcionará a la perfección.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Ahora, carguen el código base de su secuencia de agarre. Antes de ejecutar, verbalicen la predicción: "Ok, el brazo debería bajar a estas coordenadas, cerrar la pinza y levantar el objeto." ¿Listos? Ejecuten el código y observen el resultado. ¡No se preocupen si no funciona a la perfección, para eso estamos aquí!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO ⏰ 15 minutos</h2>
+                <p><strong>Propósito</strong> Enseñar a los estudiantes el proceso de calibración mediante la resolución de problemas específicos, ajustando coordenadas y parámetros hasta lograr el éxito.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción a la Calibración de Precisión ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Introduce la calibración como el núcleo de la sesión, el proceso de ajustar números para lograr una tarea física precisa.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Como vieron, el primer intento rara vez es perfecto. Ahora empieza el verdadero desafío de un ingeniero de robótica: la calibración de precisión. Vamos a convertirnos en detectives de coordenadas para encontrar los números exactos que necesita nuestro robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ciclo de Depuración - Altura (Y) y Distancia (X) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositivas 7 y 8) Guía a los equipos a través de los escenarios de error más comunes de altura y distancia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><strong>Problema:</strong> "¡El brazo pasó por encima del objeto! No bajó lo suficiente." o "¡La pinza chocó contra el objeto! Se estiró demasiado."</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> Piensen, ¿qué coordenada controla la altura? ¡La 'Y'! ¿Y la distancia? ¡La 'X'! Si no baja lo suficiente, necesitamos un valor de 'Y' más bajo. Si se estira demasiado, necesitamos un valor de 'X' más pequeño.</p>
+                                <p class="dialogue assistant"><strong>Implementación:</strong> Cambien el valor de 'x' o 'y' en su código y vuelvan a probar. ¡Un pequeño cambio puede hacer una gran diferencia!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ciclo de Depuración - La Pinza ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a los estudiantes a través del problema de un agarre fallido y cómo solucionarlo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><strong>Problema:</strong> "El brazo llega al lugar correcto, pero la pinza se cierra y no agarra nada."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, la pinza llega bien pero no agarra el cubo de LEGO. ¿Qué podemos hacer?"</p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Están muy cerca! Prueben dos cosas: 1. Asegúrense de que la pinza esté abierta (`claw_open`) antes de bajar a la posición de agarre. 2. A veces, la pinza necesita un poco más de fuerza o tiempo para cerrarse completamente. Prueben aumentar el número dentro de `claw_close(1000)` a `claw_close(1500)` para darle más tiempo a los motores para apretar."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: El Proceso de Calibración ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Resume el ciclo de calibración y fomenta la rotación de roles.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora entrarán en un bucle rápido: 1. Observar el fallo. 2. Identificar qué coordenada (X, Y o Z) necesita ajuste. 3. Modificar un solo número en el código. 4. Volver a probar. Repitan este ciclo hasta que el agarre sea exitoso. Recuerden alternar quién está programando para que todos en el equipo tengan la oportunidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutos</h2>
+                <p><strong>Propósito</strong> Celebrar el éxito, compartir aprendizajes clave sobre el proceso de calibración y fomentar la integración de habilidades.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Facilita el "momento de la victoria" para que los equipos muestren sus resultados y compartan sus descubrimientos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Es momento de Gnius STORM! ¡El momento de la victoria! Cada equipo que lo logró, preparese para mostrar su secuencia de agarre funcionando. Queremos ver al robot alcanzar, agarrar el objeto y levantarlo. Y compartan el desafío de depuración más difícil que superaron. Por ejemplo: "Tardamos 5 intentos en encontrar la coordenada 'Y' perfecta. Al final era y: 15."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Reinicio del Ciclo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 12) Lanza un mini-desafío para integrar las habilidades de esta unidad con las de unidades anteriores.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Felicidades, han logrado una de las tareas más difíciles de la robótica: la manipulación precisa! Ahora que pueden recoger un objeto, ¿qué sigue? Con el tiempo que queda, diseñen y prueben una misión completa: Agarrar -> Levantar -> Girar 90 grados -> Bajar y Soltar. ¡Apliquen todo lo que han aprendido en estas sesiones!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
