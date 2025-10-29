@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P6-TM04B</title>
+    <title>Playbook: Sesión 12 - 6to Primaria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 4B 6to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 12 - 6to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="timer">⏱️ 00:00</span>
@@ -64,18 +64,27 @@
                                 <td>
                                     <strong>Objetivos de Aprendizaje</strong>
                                     <ul>
-                                        <li>Que los estudiantes implementen su "Plan de Manipulación" en el robot XGO. Que ejecuten y depuren la secuencia de movimientos del brazo y la pinza, enfocándose en el desafío de la precisión. El objetivo principal es que logren, mediante un proceso de calibración (prueba y error), encontrar las coordenadas (X, Y, Z) correctas para que el robot alcance y agarre exitosamente un objeto físico.</li>
+                                        <li>Aplicar el ciclo <strong>percepción–decisión–acción</strong>.</li>
+                                        <li>Programar <strong>rutas autónomas</strong> controladas por <strong>visión IA</strong>.</li>
+                                        <li>Analizar errores de detección y <strong>calibración</strong> del modelo.</li>
+                                        <li>Evaluar la <strong>fiabilidad</strong> del sistema de navegación visual.</li>
+                                    </ul>
+                                    <h4>Vocabulario Clave:</h4>
+                                    <ul>
+                                      <li><b>Percepción-Decisión-Acción:</b> El ciclo fundamental de la robótica autónoma: el robot ve, decide qué hacer y luego actúa.</li>
+                                      <li><b>Navegación Autónoma:</b> La capacidad de un robot para moverse por un entorno por sí mismo, sin control remoto.</li>
+                                      <li><b>Fiabilidad:</b> Qué tan confiable y consistente es el sistema. ¿Funciona el 99% de las veces o solo el 50%?</li>
                                     </ul>
                                     <strong>Secuencia de Clase</strong>
                                     <ul>
                                         <li>⚡Bienvenida y Conexión</li>
-                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
-                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO</li>
-                                        <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
+                                        <li>⚡IMPLEMENTACIÓN Y PRUEBA DE VISIÓN</li>
+                                        <li>⚡DESAFÍO DE NAVEGACIÓN AUTÓNOMA</li>
+                                        <li>⚡GNIUS STORM Y ANÁLISIS DE FIABILIDAD</li>
                                     </ul>
                                     <strong>Entregable Clave</strong>
                                     <ul>
-                                        <li>Robot XGO ejecutando una secuencia de agarre calibrada y exitosa, demostrada por cada equipo.</li>
+                                        <li>Robot XGO completando (o intentando completar) una ruta autónoma guiada por señales visuales.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -84,23 +93,23 @@
                                         <li>Proyector o pantalla interactiva.</li>
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso al entorno de programación Python en las computadoras.</li>
-                                        <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
-                                        <li>Los "Planes de Manipulación" creados por cada equipo en la Sesión 4A.</li>
-                                        <li>Objetos pequeños para agarrar (cubos de LEGO, pompones, etc.).</li>
+                                        <li>Robots XGO V2 con AI Lens (1 por cada 4 estudiantes), cargados.</li>
+                                        <li>Los "Planes de Pruebas de Visión" creados en la sesión pasada.</li>
+                                        <li>Tarjetas de señales visuales (Flecha Derecha, Flecha Izquierda, Adelante, Stop).</li>
                                         <li>Presentación de diapositivas.</li>
-                                        <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo para consultas.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión</strong>
                                     <ol>
                                         <li><strong>Revisión de Misión (Interna)</strong>
                                             <ul>
                                                 <li>Verificar conexión a internet y que el entorno Python funcione.</li>
-                                                <li>Asegurar que los robots XGO V2 estén completamente cargados.</li>
-                                                <li>Tener la presentación de diapositivas lista.</li>
+                                                <li>Asegurar que los robots XGO V2 y sus AI Lens estén completamente cargados.</li>
+                                                <li>Tener la presentación de diapositivas y las tarjetas de señales listas.</li>
                                                 <li>Probar el chat Agente Gnius (Xolo) para consultas.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad práctica.</li>
+                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -111,17 +120,17 @@
             
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Bienvenida y Conexión ⏰ 2 minutos</h2>
-                <p><strong>Propósito:</strong> Recordar el trabajo previo, establecer el objetivo del día y preparar el entorno de trabajo para la sesión práctica.</p>
+                <p><strong>Propósito:</strong> Recordar el trabajo previo, establecer el objetivo del día de crear navegación autónoma y preparar el entorno de trabajo.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Conexión con Sesión A ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la Sesión A y crea expectación.</p>
+                            <h3>Paso 1: Bienvenida y Conexión con la sesión pasada ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales los planes de prueba de visión y crea expectación.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola de nuevo, operadores! ¡Bienvenidos a la Sesión B! En la sesión pasada diseñaron unos 'Planes de Manipulación' muy detallados. Hoy es el día de la verdad: vamos a dar vida a esos brazos robóticos y a enfrentarnos al desafío de la precisión. ¿Están listos para el agarre?</p>
+                                <p class="dialogue assistant">¡Hola de nuevo, visionarios! En la sesión pasada diseñaron sus <strong>'Planes de Pruebas de Visión'</strong>. Hoy vamos a dar el paso final: no solo hacer que el robot reaccione, sino que <strong>navegue de forma autónoma</strong> siguiendo una ruta de señales. ¿Listos para darle a su robot la capacidad de decidir su propio camino?</p>
                             </div>
                         </div>
                     </div>
@@ -133,7 +142,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Equipos, es hora de dar vida a esos brazos robóticos. Conecten sus XGO, coloquen su objeto objetivo en la posición designada y abran su 'Plan de Manipulación'.</p>
+                                <p class="dialogue assistant">Equipos, conecten sus robots y asegúrense de que la <strong>AI Lens</strong> esté bien enchufada. Abran su entorno de programación y tengan listas las tarjetas de señales. Hoy, ustedes serán los directores de tráfico de su robot autónomo. Pídanle ayuda a Xolo: <strong>"Xolo, mi perfil es [escribe aquí tu perfil] y quiero dominar la integración entre visión y locomoción. Quiero entender cómo el XGO navega según señales y cómo la IA decide su camino. Enséñame el código para seguir tarjetas de dirección y detenerse si no reconoce una instrucción."</strong></p>
                             </div>
                         </div>
                     </div>
@@ -141,30 +150,30 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
-                <p><strong>Propósito</strong> Poner en práctica el plan creado en la Sesión A, ejecutando el código del brazo en el robot físico y observando los resultados iniciales.</p>
+                <h2>⚡ Actividad 2: IMPLEMENTACIÓN Y PRUEBA DE VISIÓN ⏰ 13 minutos</h2>
+                <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando las pruebas condicionales y observando la fiabilidad del sistema de visión.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Prueba 1: "Exploración del Espacio de Trabajo" ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que realicen una prueba rápida y exploratoria para entender los límites del brazo.</p>
+                            <h3>Paso 1: Prueba 1: "Prueba de 'Go' / 'Stop'" ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que ejecuten las pruebas básicas de su plan, verificando la funcionalidad principal.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora que están listos, vamos con su primera prueba. Ejecuten rápidamente su plan para "Explorar el Espacio de Trabajo". Prueben diferentes coordenadas para `arm_move_group` y observen los límites del brazo. Esto les dará una idea intuitiva del área que puede alcanzar, algo que discutimos en la Sesión A.</p>
+                                <p class="dialogue assistant">Ahora que están listos, vamos con las pruebas básicas de su plan. Carguen el código para la <strong>"Prueba de 'Go'"</strong>. Ejecútenlo primero sin mostrar la tarjeta, y luego mostrándola. ¿Funciona como esperaban? Ahora hagan lo mismo con la <strong>"Prueba de 'Stop'"</strong>. Este es el primer paso del ciclo <strong>percepción-decisión-acción</strong>.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Prueba 2: "Primer Intento de Agarre" ⏰ 8 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Guía a los equipos para que ejecuten su secuencia de agarre completa, anticipando que probablemente no funcionará a la perfección.</p>
+                            <h3>Paso 2: Prueba 2: "Prueba de Fiabilidad" ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Guía a los equipos para que realicen la prueba de estrés, analizando los límites del sistema.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. Ahora, carguen el código base de su secuencia de agarre. Antes de ejecutar, verbalicen la predicción: "Ok, el brazo debería bajar a estas coordenadas, cerrar la pinza y levantar el objeto." ¿Listos? Ejecuten el código y observen el resultado. ¡No se preocupen si no funciona a la perfección, para eso estamos aquí!</p>
+                                <p class="dialogue assistant">Perfecto. Ahora, vamos a probar la <strong>fiabilidad</strong>. Repitan las pruebas, pero sigan las instrucciones de su <strong>"Desafío de Confiabilidad"</strong>. Inclinen la tarjeta, aléjenla un poco, o bajen la luz de la sala. ¿En qué punto deja de funcionar? Anoten sus observaciones. Entender los límites de la percepción es clave para un buen ingeniero.</p>
                             </div>
                         </div>
                     </div>
@@ -172,58 +181,67 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO ⏰ 15 minutos</h2>
-                <p><strong>Propósito</strong> Enseñar a los estudiantes el proceso de calibración mediante la resolución de problemas específicos, ajustando coordenadas y parámetros hasta lograr el éxito.</p>
+                <h2>⚡ Actividad 3: DESAFÍO DE NAVEGACIÓN AUTÓNOMA ⏰ 15 minutos</h2>
+                <p><strong>Propósito</strong> Integrar la detección visual dentro de un bucle de control para crear un sistema de navegación autónomo que sigue una secuencia de señales.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Introducción a la Calibración de Precisión ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Introduce la calibración como el núcleo de la sesión, el proceso de ajustar números para lograr una tarea física precisa.</p>
+                            <h3>Paso 1: Introducción al Bucle de Control ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Introduce el concepto de un bucle `while` para que el robot esté constantemente "viendo" y tomando decisiones.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente! Como vieron, el primer intento rara vez es perfecto. Ahora empieza el verdadero desafío de un ingeniero de robótica: la calibración de precisión. Vamos a convertirnos en detectives de coordenadas para encontrar los números exactos que necesita nuestro robot.</p>
+                                <p class="dialogue assistant">¡Muy bien! Han probado acciones aisladas. Pero un coche autónomo no mira la carretera una sola vez, ¿verdad? ¡Mira constantemente! Para que nuestro robot haga eso, necesitamos un <strong>bucle de control</strong>. Usaremos un bucle <strong>`while True:`</strong>, que significa "repetir estas instrucciones para siempre". Dentro de ese bucle, el robot constantemente hará el ciclo: <strong>PERCIBIR</strong> (mirar con la cámara), <strong>DECIDIR</strong> (usar un `if` para elegir una acción) y <strong>ACTUAR</strong> (moverse).</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ciclo de Depuración - Altura (Y) y Distancia (X) ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositivas 7 y 8) Guía a los equipos a través de los escenarios de error más comunes de altura y distancia.</p>
+                            <h3>Paso 2: Programación del Navegador Autónomo ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositivas 7 y 8) Proporciona un código base para el navegador autónomo y guía a los equipos para que lo implementen.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema:</strong> "¡El brazo pasó por encima del objeto! No bajó lo suficiente." o "¡La pinza chocó contra el objeto! Se estiró demasiado."</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> Piensen, ¿qué coordenada controla la altura? ¡La 'Y'! ¿Y la distancia? ¡La 'X'! Si no baja lo suficiente, necesitamos un valor de 'Y' más bajo. Si se estira demasiado, necesitamos un valor de 'X' más pequeño.</p>
-                                <p class="dialogue assistant"><strong>Implementación:</strong> Cambien el valor de 'x' o 'y' en su código y vuelvan a probar. ¡Un pequeño cambio puede hacer una gran diferencia!</p>
+                                <p class="dialogue assistant">Ahora, vamos a programar el cerebro de nuestro navegador. Este código crea el bucle de control. ¡Cárguenlo en su editor!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">import xgo, time
+print("Iniciando modo de navegación autónoma...")
+while True:
+    signal = xgo.ai_lens_detect(1) # 1. PERCIBIR
+    # 2. DECIDIR
+    if signal == "Forward":
+        print("Avanzando...")
+        xgo.move('forward', 50); time.sleep(1); xgo.stop()
+    elif signal == "Turn Left":
+        print("Girando a la izquierda...")
+        xgo.turn('left', 60); time.sleep(1.5); xgo.stop()
+    elif signal == "Turn Right":
+        print("Girando a la derecha...")
+        xgo.turn('right', 60); time.sleep(1.5); xgo.stop()
+    elif signal == "Stop":
+        print("Señal de Stop. Misión terminada.")
+        xgo.stop()
+        break # Rompe el bucle y termina el programa
+    else:
+        print(f"Señal '{signal}' no reconocida. Esperando...")
+        xgo.stop()
+    time.sleep(1) # Pequeña pausa antes de volver a mirar</pre>
+                                <p class="dialogue assistant">Analicen el código. ¿Ven el ciclo <strong>percepción-decisión-acción</strong>? Ahora, creen una pequeña ruta en el suelo con sus tarjetas y ejecuten el programa. ¡Están probando su primer sistema de <strong>navegación autónoma</strong>!</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 3: Ciclo de Depuración - La Pinza ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Guía a los estudiantes a través del problema de un agarre fallido y cómo solucionarlo.</p>
+                            <h3>Paso 3: Depuración y Calibración ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a los estudiantes a través de los problemas comunes en la navegación autónoma, como el tiempo de giro o la detección fallida.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema:</strong> "El brazo llega al lugar correcto, pero la pinza se cierra y no agarra nada."</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, la pinza llega bien pero no agarra el cubo de LEGO. ¿Qué podemos hacer?"</p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Están muy cerca! Prueben dos cosas: 1. Asegúrense de que la pinza esté abierta (`claw_open`) antes de bajar a la posición de agarre. 2. A veces, la pinza necesita un poco más de fuerza o tiempo para cerrarse completamente. Prueben aumentar el número dentro de `claw_close(1000)` a `claw_close(1500)` para darle más tiempo a los motores para apretar."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: El Proceso de Calibración ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Resume el ciclo de calibración y fomenta la rotación de roles.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora entrarán en un bucle rápido: 1. Observar el fallo. 2. Identificar qué coordenada (X, Y o Z) necesita ajuste. 3. Modificar un solo número en el código. 4. Volver a probar. Repitan este ciclo hasta que el agarre sea exitoso. Recuerden alternar quién está programando para que todos en el equipo tengan la oportunidad.</p>
+                                <p class="dialogue assistant"><strong>Problema:</strong> "¡El robot no gira 90 grados!" o "¡Pasa de largo una señal sin verla!"</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Si el giro no es preciso, necesitamos <strong>calibrar</strong> el <strong>`time.sleep()`</strong> del comando `turn`, como hicimos en sesiones pasadas. Si se salta una señal, quizás el robot avanza demasiado rápido o la pausa final es muy corta y no le da tiempo a <strong>percibir</strong> la siguiente instrucción."</p>
+                                <p class="dialogue assistant"><strong>Implementación:</strong> Entren en el ciclo de <strong>calibración</strong>. Ajusten los tiempos de los movimientos y las pausas hasta que su sistema de navegación sea lo más <strong>fiable</strong> posible.</p>
                             </div>
                         </div>
                     </div>
@@ -231,30 +249,30 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutos</h2>
-                <p><strong>Propósito</strong> Celebrar el éxito, compartir aprendizajes clave sobre el proceso de calibración y fomentar la integración de habilidades.</p>
+                <h2>⚡ Actividad 4: GNIUS STORM Y ANÁLISIS DE FIABILIDAD ⏰ 10 minutos</h2>
+                <p><strong>Propósito</strong> Celebrar los logros, demostrar los sistemas de navegación autónoma y discutir la fiabilidad y los desafíos de la visión IA en el mundo real.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 11) Facilita el "momento de la victoria" para que los equipos muestren sus resultados y compartan sus descubrimientos.</p>
+                            <h3>Paso 1: Gnius STORM - Demostración de Rutas Autónomas ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus robots navegando de forma autónoma.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Es momento de Gnius STORM! ¡El momento de la victoria! Cada equipo que lo logró, preparese para mostrar su secuencia de agarre funcionando. Queremos ver al robot alcanzar, agarrar el objeto y levantarlo. Y compartan el desafío de depuración más difícil que superaron. Por ejemplo: "Tardamos 5 intentos en encontrar la coordenada 'Y' perfecta. Al final era y: 15."</p>
+                                <p class="dialogue assistant">¡Tiempo de <strong>Gnius STORM</strong>! ¡El gran final! Cada equipo, prepare una ruta de 3 o 4 señales. Ejecuten su código y muestren a la clase cómo su robot navega de forma <strong>autónoma</strong>. ¡Queremos ver esos ciclos de <strong>percepción-decisión-acción</strong> en vivo!</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Reinicio del Ciclo ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 12) Lanza un mini-desafío para integrar las habilidades de esta unidad con las de unidades anteriores.</p>
+                            <h3>Paso 2: Discusión sobre Fiabilidad ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Concluye la actividad con una reflexión sobre los desafíos de la robótica autónoma.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Felicidades, han logrado una de las tareas más difíciles de la robótica: la manipulación precisa! Ahora que pueden recoger un objeto, ¿qué sigue? Con el tiempo que queda, diseñen y prueben una misión completa: Agarrar -> Levantar -> Girar 90 grados -> Bajar y Soltar. ¡Apliquen todo lo que han aprendido en estas sesiones!</p>
+                                <p class="dialogue assistant">¡Felicidades, han construido un sistema autónomo! Pero, ¿funcionó el 100% de las veces? Probablemente no. ¿Qué problemas encontraron? (Ej: "La cámara no vio la tarjeta", "El giro no fue perfecto"). Lo que han experimentado es el mayor desafío de la robótica: hacer que los sistemas sean <strong>fiables</strong> en un mundo impredecible. ¡Han trabajado como verdaderos ingenieros de IA!</p>
                             </div>
                         </div>
                     </div>
