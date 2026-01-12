@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 12 - 6to Primaria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-P6-TM04</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 12 - 6to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 4 - 6o de Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -38,249 +36,409 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje</strong>
-                                    <ul>
-                                        <li>Aplicar el ciclo <strong>percepción–decisión–acción</strong>.</li>
-                                        <li>Programar <strong>rutas autónomas</strong> controladas por <strong>visión IA</strong>.</li>
-                                        <li>Analizar errores de detección y <strong>calibración</strong> del modelo.</li>
-                                        <li>Evaluar la <strong>fiabilidad</strong> del sistema de navegación visual.</li>
-                                    </ul>
-                                    <h4>Vocabulario Clave:</h4>
-                                    <ul>
-                                      <li><b>Percepción-Decisión-Acción:</b> El ciclo fundamental de la robótica autónoma: el robot ve, decide qué hacer y luego actúa.</li>
-                                      <li><b>Navegación Autónoma:</b> La capacidad de un robot para moverse por un entorno por sí mismo, sin control remoto.</li>
-                                      <li><b>Fiabilidad:</b> Qué tan confiable y consistente es el sistema. ¿Funciona el 99% de las veces o solo el 50%?</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase</strong>
-                                    <ul>
-                                        <li>⚡Bienvenida y Conexión</li>
-                                        <li>⚡IMPLEMENTACIÓN Y PRUEBA DE VISIÓN</li>
-                                        <li>⚡DESAFÍO DE NAVEGACIÓN AUTÓNOMA</li>
-                                        <li>⚡GNIUS STORM Y ANÁLISIS DE FIABILIDAD</li>
-                                    </ul>
-                                    <strong>Entregable Clave</strong>
-                                    <ul>
-                                        <li>Robot XGO completando (o intentando completar) una ruta autónoma guiada por señales visuales.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Acceso al entorno de programación Python en las computadoras.</li>
-                                        <li>Robots XGO V2 con AI Lens (1 por cada 4 estudiantes), cargados.</li>
-                                        <li>Los "Planes de Pruebas de Visión" creados en la sesión pasada.</li>
-                                        <li>Tarjetas de señales visuales (Flecha Derecha, Flecha Izquierda, Adelante, Stop).</li>
-                                        <li>Presentación de diapositivas.</li>
-                                        <li>Chat de Agente Gnius (Xolo) activo para consultas.</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna)</strong>
-                                            <ul>
-                                                <li>Verificar conexión a internet y que el entorno Python funcione.</li>
-                                                <li>Asegurar que los robots XGO V2 y sus AI Lens estén completamente cargados.</li>
-                                                <li>Tener la presentación de diapositivas y las tarjetas de señales listas.</li>
-                                                <li>Probar el chat Agente Gnius (Xolo) para consultas.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Usar Micro:Bit y XGO para secuenciar comandos y depurar movimientos combinados para crear coreografías fluidas y comprender la autonomía expresiva y el diseño creativo.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Quiero aprender a construir una secuencia completa de movimientos combinados para el XGO usando Python. Explícame primero qué significa secuenciar comandos y por qué el orden y los tiempos importan. Luego enséñame cómo coordinar xgo.roll(angle), xgo.pitch(angle) y xgo.translation(x,y,z) para crear una coreografía fluida. Guíame para construir una rutina en 4 fases: inicio (pose), transición (roll/pitch), desplazamiento (translation) y cierre (pose). Incluye cómo depurar si el robot se mueve brusco o se descoordina (ej: velocidad, pausas, ángulos). Termina con un reto: “crea una coreografía que parezca que el robot está contando una historia” y evalúame.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Autonomía expresiva: La capacidad de decidir cómo se mueve un robot para que transmita una idea o emoción, como si fuera un actor siguiendo un guion.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar el robot XGO para crear una secuencia de movimientos coordinados y fluidos.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes tiempos de pausa y ángulos de movimiento para entender limitaciones en la fluidez.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Robot XGO (1 por cada 4 estudiantes)</label> <label><input type="checkbox"> Tarjeta micro:bit (1 por cada 4 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión XGO instalada</label>
+                        <label><input type="checkbox"> Espacio despejado para las coreografías</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'XGO' → Agregar</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con cuidado, no forzar las articulaciones del XGO, mantener en superficie plana y verificar la conexión del micro:bit.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la secuenciación de movimientos y la expresión robótica (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el robot no responde:</strong> Verificar que la batería esté cargada y bien conectada. Revisar que el micro:bit esté correctamente insertado.</li>
+<li><strong>Si el robot no se mueve correctamente:</strong> Confirmar que la extensión correspondiente esté instalada en MakeCode. Verificar que las articulaciones no estén bloqueadas.</li>
+<li><strong>Si el XGO se mueve de forma brusca:</strong> Revisa con XOLO los tiempos de pausa entre comandos y reduce los ángulos de movimiento.</li>
+<li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Bienvenida y Conexión ⏰ 2 minutos</h2>
-                <p><strong>Propósito:</strong> Recordar el trabajo previo, establecer el objetivo del día de crear navegación autónoma y preparar el entorno de trabajo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Conexión con la sesión pasada ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales los planes de prueba de visión y crea expectación.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola de nuevo, visionarios! En la sesión pasada diseñaron sus <strong>'Planes de Pruebas de Visión'</strong>. Hoy vamos a dar el paso final: no solo hacer que el robot reaccione, sino que <strong>navegue de forma autónoma</strong> siguiendo una ruta de señales. ¿Listos para darle a su robot la capacidad de decidir su propio camino?</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Guía de Conexión y Preparación ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 3) Guía a los equipos para que se preparen técnicamente para la sesión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Equipos, conecten sus robots y asegúrense de que la <strong>AI Lens</strong> esté bien enchufada. Abran su entorno de programación y tengan listas las tarjetas de señales. Hoy, ustedes serán los directores de tráfico de su robot autónomo. Pídanle ayuda a Xolo: <strong>"Xolo, mi perfil es [escribe aquí tu perfil] y quiero dominar la integración entre visión y locomoción. Quiero entender cómo el XGO navega según señales y cómo la IA decide su camino. Enséñame el código para seguir tarjetas de dirección y detenerse si no reconoce una instrucción."</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos vida y ritmo a sus robots XGO!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre la secuenciación de movimientos y la expresión robótica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A coordinar movimientos complejos para que el XGO realice una coreografía fluida.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros de efectos especiales en el cine usan esta tecnología para que los robots animatrónicos parezcan seres vivos con emociones.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: IMPLEMENTACIÓN Y PRUEBA DE VISIÓN ⏰ 13 minutos</h2>
-                <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando las pruebas condicionales y observando la fiabilidad del sistema de visión.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Prueba 1: "Prueba de 'Go' / 'Stop'" ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que ejecuten las pruebas básicas de su plan, verificando la funcionalidad principal.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora que están listos, vamos con las pruebas básicas de su plan. Carguen el código para la <strong>"Prueba de 'Go'"</strong>. Ejecútenlo primero sin mostrar la tarjeta, y luego mostrándola. ¿Funciona como esperaban? Ahora hagan lo mismo con la <strong>"Prueba de 'Stop'"</strong>. Este es el primer paso del ciclo <strong>percepción-decisión-acción</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Prueba 2: "Prueba de Fiabilidad" ⏰ 7 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Guía a los equipos para que realicen la prueba de estrés, analizando los límites del sistema.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo coordinar rotaciones y traslaciones para movimientos fluidos.</li>
+                            <li>Introduce el concepto de autonomía expresiva en la robótica.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar el XGO para secuenciar movimientos.</li>
+                            <li>Aprender sobre el diseño creativo con restricciones.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. Ahora, vamos a probar la <strong>fiabilidad</strong>. Repitan las pruebas, pero sigan las instrucciones de su <strong>"Desafío de Confiabilidad"</strong>. Inclinen la tarjeta, aléjenla un poco, o bajen la luz de la sala. ¿En qué punto deja de funcionar? Anoten sus observaciones. Entender los límites de la percepción es clave para un buen ingeniero.</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el XGO para crear secuencias y entender la autonomía expresiva.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a preparar a nuestros XGO para el escenario. Abran su chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo secuenciar comandos para que los movimientos del robot no sean bruscos, sino fluidos como un baile. Vamos a aprender por qué el orden de las instrucciones y los tiempos de espera son la clave para una gran coreografía. ¡Pregúntenle todo lo que necesiten!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: DESAFÍO DE NAVEGACIÓN AUTÓNOMA ⏰ 15 minutos</h2>
-                <p><strong>Propósito</strong> Integrar la detección visual dentro de un bucle de control para crear un sistema de navegación autónomo que sigue una secuencia de señales.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Introducción al Bucle de Control ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Introduce el concepto de un bucle `while` para que el robot esté constantemente "viendo" y tomando decisiones.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien! Han probado acciones aisladas. Pero un coche autónomo no mira la carretera una sola vez, ¿verdad? ¡Mira constantemente! Para que nuestro robot haga eso, necesitamos un <strong>bucle de control</strong>. Usaremos un bucle <strong>`while True:`</strong>, que significa "repetir estas instrucciones para siempre". Dentro de ese bucle, el robot constantemente hará el ciclo: <strong>PERCIBIR</strong> (mirar con la cámara), <strong>DECIDIR</strong> (usar un `if` para elegir una acción) y <strong>ACTUAR</strong> (moverse).</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Programación del Navegador Autónomo ⏰ 7 minutos</h3>
-                            <p>(Proyectar Diapositivas 7 y 8) Proporciona un código base para el navegador autónomo y guía a los equipos para que lo implementen.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, vamos a programar el cerebro de nuestro navegador. Este código crea el bucle de control. ¡Cárguenlo en su editor!</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">import xgo, time
-print("Iniciando modo de navegación autónoma...")
-while True:
-    signal = xgo.ai_lens_detect(1) # 1. PERCIBIR
-    # 2. DECIDIR
-    if signal == "Forward":
-        print("Avanzando...")
-        xgo.move('forward', 50); time.sleep(1); xgo.stop()
-    elif signal == "Turn Left":
-        print("Girando a la izquierda...")
-        xgo.turn('left', 60); time.sleep(1.5); xgo.stop()
-    elif signal == "Turn Right":
-        print("Girando a la derecha...")
-        xgo.turn('right', 60); time.sleep(1.5); xgo.stop()
-    elif signal == "Stop":
-        print("Señal de Stop. Misión terminada.")
-        xgo.stop()
-        break # Rompe el bucle y termina el programa
-    else:
-        print(f"Señal '{signal}' no reconocida. Esperando...")
-        xgo.stop()
-    time.sleep(1) # Pequeña pausa antes de volver a mirar</pre>
-                                <p class="dialogue assistant">Analicen el código. ¿Ven el ciclo <strong>percepción-decisión-acción</strong>? Ahora, creen una pequeña ruta en el suelo con sus tarjetas y ejecuten el programa. ¡Están probando su primer sistema de <strong>navegación autónoma</strong>!</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los robots XGO conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Depuración y Calibración ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Guía a los estudiantes a través de los problemas comunes en la navegación autónoma, como el tiempo de giro o la detección fallida.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique coreografías artísticas.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar movimientos y pausas expresivas.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Conectar el micro:bit al XGO y probar la coreografía.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a idear una coreografía artística con el XGO usando Python sincronizada con música o ritmo. Quiero que combine movimientos, pausas y poses expresivas en una rutina de 20–30 segundos. Después genera el código en Python para el ejecutarlo, Luego dame el código en Python para ejecutarlo, de acuerdo a tu entrenamiento con el robot XGO y Micro:bit. incluyendo pausas exactas para que se sienta sincronizado."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema:</strong> "¡El robot no gira 90 grados!" o "¡Pasa de largo una señal sin verla!"</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Si el giro no es preciso, necesitamos <strong>calibrar</strong> el <strong>`time.sleep()`</strong> del comando `turn`, como hicimos en sesiones pasadas. Si se salta una señal, quizás el robot avanza demasiado rápido o la pausa final es muy corta y no le da tiempo a <strong>percibir</strong> la siguiente instrucción."</p>
-                                <p class="dialogue assistant"><strong>Implementación:</strong> Entren en el ciclo de <strong>calibración</strong>. Ajusten los tiempos de los movimientos y las pausas hasta que su sistema de navegación sea lo más <strong>fiable</strong> posible.</p>
-                            </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El XGO completa todos los movimientos de la coreografía sin caerse?</li>
+                            <li>¿Qué pasa si reduces el tiempo de pausa entre un movimiento de 'roll' y uno de 'pitch'?</li>
+                            <li>¿Funciona igual la coreografía en una superficie lisa vs. una rugosa?</li>
+                            <li>¿Cómo lograste que el robot expresara una emoción específica a través de la autonomía expresiva?</li>
+                            <li>¿Qué restricciones de diseño creativo tuviste que superar para que la rutina durara 30 segundos?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear nuestra obra maestra! Vamos a idear una coreografía artística. Primero, definan con XOLO qué historia o 'vibe' quieren transmitir. Una vez que tengan su GCS, tradúzcanlo a bloques en MakeCode. Por ejemplo, podrían hacer que su XGO parezca un perrito emocionado que saluda y luego hace una pirueta. No olviden las pausas, son el secreto del ritmo. Prueben primero en el simulador y, cuando estén listos, pasen el código al robot real. Si algo no sale fluido o el robot se mueve raro, ¡pregúntenle a XOLO! Él los ayudará a depurar el código para que todo sea perfecto.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con la coreografía básica. ¿Puedes enseñarme cómo hacer que mi XGO sincronice sus movimientos con un patrón de luces en la pantalla del micro:bit?"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
+            <div class="activity-card" id="activity-4">
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué movimientos y transiciones fluyeron bien.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué combinaciones de movimientos fluyeron mejor en tu XGO? ¿Qué te sorprendió de su expresividad?</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi XGO realizó una coreografía de movimientos fluidos y pausas. Me sorprendió que al cambiar los ángulos parecía que estaba bailando de verdad."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: GNIUS STORM Y ANÁLISIS DE FIABILIDAD ⏰ 10 minutos</h2>
-                <p><strong>Propósito</strong> Celebrar los logros, demostrar los sistemas de navegación autónoma y discutir la fiabilidad y los desafíos de la visión IA en el mundo real.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Gnius STORM - Demostración de Rutas Autónomas ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus robots navegando de forma autónoma.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo de <strong>Gnius STORM</strong>! ¡El gran final! Cada equipo, prepare una ruta de 3 o 4 señales. Ejecuten su código y muestren a la clase cómo su robot navega de forma <strong>autónoma</strong>. ¡Queremos ver esos ciclos de <strong>percepción-decisión-acción</strong> en vivo!</p>
-                            </div>
-                        </div>
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
+            <div class="activity-card" id="activity-5">
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Discusión sobre Fiabilidad ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 11) Concluye la actividad con una reflexión sobre los desafíos de la robótica autónoma.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Felicidades, han construido un sistema autónomo! Pero, ¿funcionó el 100% de las veces? Probablemente no. ¿Qué problemas encontraron? (Ej: "La cámara no vio la tarjeta", "El giro no fue perfecto"). Lo que han experimentado es el mayor desafío de la robótica: hacer que los sistemas sean <strong>fiables</strong> en un mundo impredecible. ¡Han trabajado como verdaderos ingenieros de IA!</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
